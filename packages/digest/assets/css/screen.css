@@ -203,15 +203,8 @@ body {
     margin-top: 3.2rem;
 }
 
-.post-template .gh-head,
-.post-template .gh-article-header,
-.page-template .gh-head,
-.page-template .gh-article-header {
-    background-color: var(--color-lighter-gray);
-}
-
 body:not(.home-template) .gh-article-header {
-    padding-top: 8rem;
+    padding-top: 2rem;
     padding-bottom: 12rem;
 }
 
@@ -456,4 +449,11 @@ body:not(.home-template) .gh-article-image {
         margin-bottom: 0.4rem;
         font-size: 1.6rem;
     }
+}
+
+
+.gh-portal-powered {
+  display: none !important;
+  right: 7px;
+  color: red;
 }

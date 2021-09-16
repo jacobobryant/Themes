@@ -6,8 +6,12 @@
 
 .gh-main {
     flex-grow: 1;
-    padding-top: 8rem;
     padding-bottom: 8rem;
+}
+
+.sample-cta {
+  margin-top: 6rem !important;
+  margin-bottom: 4rem;
 }
 
 .gh-outer {
@@ -58,7 +62,6 @@ use it for applying any other styles. */
 
 @media (max-width: 767px) {
     #gh-main {
-        padding-top: 4.8rem;
         padding-bottom: 4.8rem;
     }
 }

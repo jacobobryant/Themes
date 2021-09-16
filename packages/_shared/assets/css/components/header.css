@@ -11,6 +11,10 @@
     padding: 3.2rem 0;
 }
 
+.foo {
+  margin-left: var(--head-nav-gap);
+}
+
 .gh-head-brand {
     line-height: 1;
 }
@@ -24,10 +28,7 @@
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: -0.03em;
-}
-
-.gh-head-logo img {
-    max-height: 32px;
+    flex-shrink: 0;
 }
 
 .gh-head-description {
@@ -51,6 +52,7 @@
 .gh-head-menu {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -73,6 +75,7 @@
 .gh-head-btn.gh-btn {
     padding: 0.9rem 1.4rem;
     font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
 .gh-head-btn:not(.gh-btn) {
@@ -308,80 +311,5 @@ Home About Collection Author Portal
 
     #gh-head .gh-head-description {
         display: none;
-    }
-}
-
-@media (max-width: 991px) {
-    #gh-head .gh-head-inner {
-        grid-template-columns: 1fr;
-    }
-
-    #gh-head .gh-head-brand {
-        display: flex;
-        grid-column-start: 1;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .gh-burger {
-        display: block;
-    }
-
-    #gh-head .gh-head-menu,
-    #gh-head .gh-head-actions {
-        display: none;
-    }
-
-    #gh-head .nav a {
-        font-size: 2.4rem;
-    }
-
-    #gh-head .nav li + li {
-        margin-top: 1.2rem;
-        margin-left: 0;
-    }
-
-    #gh-head .gh-head-actions {
-        text-align: center;
-    }
-
-    #gh-head .gh-head-btn {
-        margin-top: 3.2rem;
-        margin-left: 0;
-    }
-
-    #gh-head .gh-head-btn:not(.gh-btn) {
-        font-size: 2rem;
-    }
-
-    .is-head-open #gh-head {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 3999999;
-        padding: 0 var(--gap) 2.4rem;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .is-head-open #gh-head .gh-head-inner {
-        grid-template-rows: auto 1fr auto;
-        height: 100%;
-    }
-
-    .is-head-open #gh-head .gh-head-menu,
-    .is-head-open #gh-head .gh-head-actions {
-        display: block;
-    }
-
-    .is-head-open #gh-head .nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .is-head-open.is-head-transparent #gh-head {
-        background-color: var(--ghost-accent-color);
     }
 }

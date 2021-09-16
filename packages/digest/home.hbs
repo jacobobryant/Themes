@@ -4,6 +4,11 @@
     {{#get "posts" limit="1"}}
         {{#foreach posts}}
             <article class="gh-article {{post_class}}">
+              <div class="gh-canvas gh-content sample-cta">
+                <p><em>Discover great newsletters with
+                  <a id="sample-cta" href="https://thesample.ai">The Sample</a>, our AI-driven newsletter recommender.</em></p>
+                </p>
+              </div>
                 {{> content}}
             </article>
         {{/foreach}}
